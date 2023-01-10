@@ -6,7 +6,7 @@ from accounts.api.serializers import UserSerializer
 
 
 # Create your views here.
-class UserViewSet(viewsets.ModelViewSet):
+class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     API endpoint that allows users to be viewed or edited
     """
