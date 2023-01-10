@@ -2,7 +2,13 @@
 *.box
 .vagrant
 Vagrantfile
+
+#PyCharm
 .idea
+.pycharm_helper
+
+#cached
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
