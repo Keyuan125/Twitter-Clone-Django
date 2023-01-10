@@ -5,7 +5,7 @@ Vagrantfile
 
 #PyCharm
 .idea
-.pycharm_helper
+.pycharm_helpers
 
 #cached
 .DS_Store
