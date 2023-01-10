@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'Start!'
-
+echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 
 cd /vagrant
