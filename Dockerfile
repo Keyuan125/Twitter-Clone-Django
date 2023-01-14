@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+
+# Mount the project directory to the docker containter
 ADD ../Twitter-Clone-Django ~/home/Twitter-Clone-Django
 
 
