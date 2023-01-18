@@ -25,7 +25,7 @@ SECRET_KEY = 'gg1i=85(l=73!73$9($4j^lvuq6vdg=c)8(5at*cf63-!+kmnk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.33.10', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.33.10', 'localhost', '0.0.0.0']
 
 
 # Application definition
@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'twitter',
-        'HOST': '0.0.0.0',
+        'HOST': 'testMySQL',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD': 'password',
