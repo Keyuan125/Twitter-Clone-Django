@@ -56,7 +56,7 @@ class AccountViewSet(viewsets.ViewSet):
                 "message": "Please check input",
                 "errors": serializer.errors,
             }, status=400)
-        print(serializer.validated_data['username'], serializer.validated_data['password'])
+        # print(serializer.validated_data['username'], serializer.validated_data['password'])
         username = serializer.validated_data['username']
         password = serializer.validated_data['password']
 
