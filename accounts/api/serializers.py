@@ -13,9 +13,9 @@ class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
     def validate(self, data):
-        if User.objects.filter(username=data['username'].lower()).exists():
+        if not User.objects.filter(username=data['username'].lower()).exists():
             raise exceptions.ValidationError({
-                'username': 'This username has been occupied.'
+                'username': 'This username doesn\'t exist'
             })
         return data
 
