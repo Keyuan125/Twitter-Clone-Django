@@ -46,6 +46,8 @@ class SignupSerializer(serializers.ModelSerializer):
         email = validated_data['email'].lower()
         password = validated_data['password']
 
+
+        # this is a built in Django function
         user = User.objects.create_user(
             username = username,
             email = email,
